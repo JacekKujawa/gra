@@ -152,64 +152,63 @@ public class Game {
         String result = "None";
         //Student code goes here ...
         //Vertical Win x
-        if(grid[0][0] == 'x'&& grid[0][1] == 'x' && grid [0][2] == 'x' ){
-            result = "X wins";
-
-
-        }
-        if(grid[1][0] == 'x'&& grid[1][1] == 'x' && grid [1][2] == 'x' ){
-            result = "X wins";
-
-
-        }
-        if(grid[2][0] == 'x'&& grid[2][1] == 'x' && grid [2][2] == 'x' ){
-            result = "X wins";
-
-        //Horizontal Win x
-        }
         if(grid[0][0] == 'x'&& grid[1][0] == 'x' && grid [2][0] == 'x' ){
-            result = "X wins";
+            return "X wins";
 
 
         }
         if(grid[0][1] == 'x'&& grid[1][1] == 'x' && grid [2][1] == 'x' ){
-            result = "X wins";
+            return  "X wins";
+
+
+        }
+        if(grid[0][2] == 'x'&& grid[1][2] == 'x' && grid [2][2] == 'x' ){
+            return  "X wins";
+
+            //Horizontal Win x
+
+        }
+        if(grid[0][0] == 'x'&& grid[0][1] == 'x' && grid [0][2] == 'x' ){
+            return "X wins";
+
+
+        }
+        if(grid[1][0] == 'x'&& grid[1][1] == 'x' && grid [1][2] == 'x' ){
+            return  "X wins";
         }
 
-        if(grid[0][2] == 'x'&& grid[1][2] == 'x' && grid [2][2] == 'x' ){
-            result = "X wins";
+        if(grid[2][0] == 'x'&& grid[2][1] == 'x' && grid [2][2] == 'x' ){
+            return "X wins";
 
         }
         //Vertical Win o
-
-        if(grid[0][0] == 'o'&& grid[0][1] == 'o' && grid [0][2] == 'o' ){
-            result = "O wins";
-
-
-        }
-        if(grid[1][0] == 'o'&& grid[1][1] == 'o' && grid [1][2] == 'o' ){
-            result = "O wins";
-
-
-        }
-
-        if(grid[2][0] == 'o'&& grid[2][1] == 'o' && grid [2][2] == 'o' ){
-            result = "O wins";
-
-
-        }
-        //Horizontal Win o
         if(grid[0][0] == 'o'&& grid[1][0] == 'o' && grid [2][0] == 'o' ){
-            result = "O wins";
+            return "O wins";
 
 
         }
         if(grid[0][1] == 'o'&& grid[1][1] == 'o' && grid [2][1] == 'o' ){
-            result = "O wins";
+            return  "O wins";
+
+
+        }
+        if(grid[0][2] == 'o'&& grid[1][2] == 'o' && grid [2][2] == 'o' ){
+            return  "O wins";
+
+            //Horizontal Win o
+
+        }
+        if(grid[0][0] == 'o'&& grid[0][1] == 'o' && grid [0][2] == 'o' ){
+            return "O wins";
+
+
+        }
+        if(grid[1][0] == 'o'&& grid[1][1] == 'o' && grid [1][2] == 'o' ){
+            return  "O wins";
         }
 
-        if(grid[0][2] == 'o'&& grid[1][2] == 'o' && grid [2][2] == 'o' ){
-            result = "O wins";
+        if(grid[2][0] == 'o'&& grid[2][1] == 'o' && grid [2][2] == 'o' ){
+            return  "O wins";
 
         }
 
@@ -217,31 +216,31 @@ public class Game {
 
         //Diagonal Wins
         if(grid[0][0] == 'x'&& grid[1][1] == 'x' && grid [2][2] == 'x' ){
-            result = "X wins";
+            return  "X wins";
 
 
         }
         if(grid[0][0] == 'o'&& grid[1][1] == 'o' && grid [2][2] == 'o' ){
-            result = "O wins";
+            return "O wins";
 
 
         }
 
         if(grid[2][0] == 'x'&& grid[1][1] == 'x' && grid [0][2] == 'x' ){
-            result = "X wins";
+            return "X wins";
 
 
         }
         if(grid[2][0] == 'o'&& grid[1][1] == 'o' && grid [0][2] == 'o' ){
-            result = "O wins";
+            return  "O wins";
 
 
         }
         //Tie Game
 
         if(grid[0][0] != '-' && grid[0][1] != '-' && grid[0][2] != '-' && grid[1][0] !='-'&&
-                grid[1][1] != '-' && grid[1][2] != '-' && grid[2][0] != ' ' && grid[2][1] != ' ' && grid[2][2] != ' '){
-            result = "tie";
+                grid[1][1] != '-' && grid[1][2] != '-' && grid[2][0] != '-' && grid[2][1] != '-' && grid[2][2] != '-'){
+            return  "tie";
 
         }
         return result;
